@@ -54,9 +54,13 @@ torch.utils.data.DataLoader()로 데이터를 불러옴
 
 batch_size, data shuffle 등 간단히 수행가능
 
+testset도 똑같이 진행
+
 ![image](https://user-images.githubusercontent.com/104436260/176821536-be56ba1d-de27-4f8d-b4d8-7ebee3a9c194.png)
 
-testset도 똑같이 진행
+CIFAR10 data에 들어있는 class생성
+
+텐서로 변환한 CIFAR10이미지 보여주는 imshow()함수 정의 배치당 4개의 이미지 추출
 
 
 
