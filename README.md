@@ -62,8 +62,8 @@ CIFAR10 data에 들어있는 class생성
 
 텐서로 변환한 CIFAR10이미지 보여주는 imshow()함수 정의 배치당 4개의 이미지 추출
 
+![image](https://user-images.githubusercontent.com/104436260/176823202-62349f68-e4e0-46c5-8f09-d53180150787.png)
 
-
-
+iter()함수로 trainloader에 있는 이미지와 라벨을 순서대로 꺼낼 수 있는 iterator 객체 생성하고, next()함수로 이미지 데이터와 라벨을 
   
   
