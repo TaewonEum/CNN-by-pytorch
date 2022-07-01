@@ -41,14 +41,22 @@ transforms.Compose() 활용하여 모듈을 생성하여 후에 이미지 데이
 ![image](https://user-images.githubusercontent.com/104436260/176813942-29e66e42-84d7-43a5-b737-893ef70bc186.png)
 
 
-torchivision에서 데이터 셋 가져오기
+torchivision.dataset에서 데이터 셋 만들기
 
 ![image](https://user-images.githubusercontent.com/104436260/176814033-ec1a8396-0327-4c86-b87f-0cafea7f69dc.png)
 torchvision.datasets.CIFAR10(root=‘데이터저장위치’, train=True # True=train, False=test,download-True #다운로드 여부,transform=transform  #앞장에 데이터 선처리 작업)
 
 torchvision.dataset.CIFAR10->CIFAR10 데이터 가져오기
 
+torch.utils.data.DataLoader()로 데이터를 불러옴
 
+![image](https://user-images.githubusercontent.com/104436260/176821370-ef23b674-5810-4b53-ab25-fd22a75f4840.png)
+
+batch_size, data shuffle 등 간단히 수행가능
+
+![image](https://user-images.githubusercontent.com/104436260/176821536-be56ba1d-de27-4f8d-b4d8-7ebee3a9c194.png)
+
+testset도 똑같이 진행
 
 
 
