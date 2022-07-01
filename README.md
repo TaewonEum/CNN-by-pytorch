@@ -102,3 +102,9 @@ self.fc1=Fully-connected(3차원에서 1차원으로 변환된 데이터를 계�
 
 -두번째 layer에서 Conv2+ReLu함수를 적용하여 14x14x6 이미지를 10x10x16 사이즈로 반환 후, Maxpooling을 똑같이 적용하여 최종 5x5x16 사이즈로 이미지 반환
 
+-세 번쨰 layer x.view(-1,16*5*5) 부분에서 3차원 형태의 데이터를 1차원 데이터로 flatten작업을 해줌
+
+-네 번째, 다섯 번째 layer에서 flatten된 1차원 데이터에 fully-connected+Relu 함수 적용(fully-connected란 1차원 변환 데이터가 각 범주에 속학확률 계산)
+
+-여섯 번째 layer에서는 fully-connected만 진행, activation function(ReLu)부분 적용하지 않고 return을 통해서 최종 output출력
+
