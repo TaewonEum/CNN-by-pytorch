@@ -76,6 +76,29 @@ images, labels 출력, 이미지는 이미지 정보를 담고있는 4개의 Ten
 make_grid를 통해 grid tensor를 만들고 이를 이전에 생성한 imshow()함수를 통해 여러 이미지를 출력
 
 3.Build Model
-====
+======
+Pytorch로 인공신경망 설계
+![image](https://user-images.githubusercontent.com/104436260/176824629-f7ee169b-f68b-4368-aba0-7ca5f360fc23.png)
 
+일반적으로 Pytorch로 인공신경망을 설계할 때, nn.Module을 활용하여 만드는 것이 일반적임
+
+1. 상위 클래스를 상속받기 위해, 클래스를 선언할 때 클래스명 뒤에 상속받을 클래스명 입력 ex) Class Net(nn.Module)
+
+2.def__init__(self): 부분에서 함수를 정의함
+
+-super()함수로 상위클래스 상속-> super(모델명,self).__init__()을 통해 nn.Module을 실행시킴
+
+-self.속성명으로 값을 할당함, 여기서는 모델의 구조를 정의함 ex)self.conv1=nn.Conv2d(in_channel, out_channel, filter크기)
+
+self.conv1=convolution layer
+
+self.pool=maxpooling
+
+self.fc1=Fully-connected(3차원에서 1차원으로 변환된 데이터를 계산하여 각 범주에 속할 확률을 계산하는 과정
   
+3.forward(): 부분에서 모델이 어떻게 학습할지 코딩
+
+-처음 layer에서 Conv1+ReLu(activation Function)적용 하여 32x32x3 이미지를 28x28x6으로 반환후, Maxpooling 적용(size=2, stride=2)->14x14x6 사이즈로 이미지 반환
+
+-두번째 layer에서 Conv2+ReLu함수를 적용하여 14x14x6 이미지를 10x10x16 사이즈로 반환 후, Maxpooling을 똑같이 적용하여 최종 5x5x16 사이즈로 이미지 반환
+
