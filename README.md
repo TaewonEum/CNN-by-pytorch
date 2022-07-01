@@ -32,6 +32,10 @@ Chapter
 ![image](https://user-images.githubusercontent.com/104436260/176813424-274dd8fa-9062-4644-8bc7-7d3b2b587308.png)
 
 Seed고정
+![image](https://user-images.githubusercontent.com/104436260/176813749-c71c3c24-67f8-4006-b073-87def2ed11d0.png)
+
+2.Data Download
+================
 
 
   
