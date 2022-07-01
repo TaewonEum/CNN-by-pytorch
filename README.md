@@ -26,5 +26,13 @@ Chapter
 5.Prediction Test data set
 
 
+1.Import Library
+=================
+분석에 필요한 라이브러리 Import
+![image](https://user-images.githubusercontent.com/104436260/176813424-274dd8fa-9062-4644-8bc7-7d3b2b587308.png)
+
+Seed고정
+
+
   
   
