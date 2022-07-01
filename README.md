@@ -1,4 +1,4 @@
-# CNN-by-pytorch
+# Image classification-pytorch-cnn
 현재 모델 소개:LeNet-5
 ======================
 Yann LeCun 연구팀이 1998년 발표한 CNN알고리즘
