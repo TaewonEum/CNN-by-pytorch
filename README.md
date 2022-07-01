@@ -108,3 +108,7 @@ self.fc1=Fully-connected(3차원에서 1차원으로 변환된 데이터를 계�
 
 -여섯 번째 layer에서는 fully-connected만 진행, activation function(ReLu)부분 적용하지 않고 return을 통해서 최종 output출력
 
+손실함수&최적화
+=======
+
+
