@@ -65,5 +65,17 @@ CIFAR10 data에 들어있는 class생성
 ![image](https://user-images.githubusercontent.com/104436260/176823202-62349f68-e4e0-46c5-8f09-d53180150787.png)
 
 iter()함수로 trainloader에 있는 이미지와 라벨을 순서대로 꺼낼 수 있는 iterator 객체 생성하고, next()함수로 이미지 데이터와 라벨을 
-  
+꺼내옴
+
+![image](https://user-images.githubusercontent.com/104436260/176823243-36f515d1-451a-49b2-bbc1-f0b7c0c418e3.png)
+
+images, labels 출력, 이미지는 이미지 정보를 담고있는 4개의 Tensor형태 데이터 추출, labels는 해당 이미지에 대한 라벨값을 0~9사이의 정수로 추출
+
+![image](https://user-images.githubusercontent.com/104436260/176823313-0df01a26-2747-4bb1-b694-d8245f63a2f5.png)
+
+make_grid를 통해 grid tensor를 만들고 이를 이전에 생성한 imshow()함수를 통해 여러 이미지를 출력
+
+3.Build Model
+====
+
   
