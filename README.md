@@ -35,6 +35,20 @@ Chapter
 분석에 필요한 라이브러리 Import
 ![image](https://user-images.githubusercontent.com/104436260/176813424-274dd8fa-9062-4644-8bc7-7d3b2b587308.png)
 
+torch: 딥러닝 도구중 하나로 페이스북에서 제공
+
+torchvision: computer vision용 라이브러리
+
+torchvision.transforms: torchvision이 제공하는 이미지 or 영상 변환
+
+torch.nn: deep Learning model에 필요한 모듈이 모아져있는 패키지
+
+torch.nn.functional: nn과 같은 모듈이 모아져 있지만 함수의 input으로 반드시 연산이 되어야 하는 값을 받음.
+
+model class를 만들 때 init부분에는 torch.nn 클래스를 이용하여 모델을 정의하고 forward진행할 때 torch.nn.functional 함수를 이용하여 계산함.
+
+torch.optim: 학습에 관련된 optimizing method가 있는 패키지
+
 Seed고정
 
 ![image](https://user-images.githubusercontent.com/104436260/176813749-c71c3c24-67f8-4006-b073-87def2ed11d0.png)
